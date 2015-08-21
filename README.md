@@ -1,20 +1,16 @@
-# PostCSS Rgb Plz [![Build Status][ci-img]][ci]
+# postcss-rgb-plz ![npm badge]()
 
 [PostCSS] plugin to convert hex colors to rgb.
 
-[PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/himynameisdave/postcss-rgb-plz.svg
-[ci]:      https://travis-ci.org/himynameisdave/postcss-rgb-plz
-
 ```css
 .foo {
-    /* Input example */
+  color: #333;
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  color: rgb( 51, 51, 51 );
 }
 ```
 
@@ -28,4 +24,4 @@ See [PostCSS] docs for examples for your environment.
 
 ### Reasoning
 
-Part of the CSS styleguide at my work is to always use rgb values for color, and sometimes I like to use hexes/my preprocessor will convert to hexes.
+Part of the CSS styleguide at my work is to always use rgb values for color, and sometimes I like to use hexes/my preprocessor will convert to hexes. This solves that issue.

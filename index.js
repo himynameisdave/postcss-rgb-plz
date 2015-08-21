@@ -13,7 +13,7 @@ module.exports = postcss.plugin('postcss-rgb-plz', function (opts) {
           //  create a list of hexes in a given value
           var hexes = val.match(/#\w{3,6}/g);
           //  as long as there actually are hexes...
-          if( hexes.length > 0 ){
+          if( hexes && hexes.length > 0 ){
             // ...we loop through them and replace them with the rgb string
             hexes.forEach( function( hex ){
               decl.value = val.replace( hex, color(hex).rgbString() )
