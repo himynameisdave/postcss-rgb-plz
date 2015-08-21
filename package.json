@@ -1,0 +1,35 @@
+{
+  "name": "postcss-rgb-plz",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to convert hex colors to rgb",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "color",
+    "rgb",
+    "hex"
+  ],
+  "author": "dlunny <dlunny@featurecreeptechnology.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himynameisdave/postcss-rgb-plz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/himynameisdave/postcss-rgb-plz/issues"
+  },
+  "homepage": "https://github.com/himynameisdave/postcss-rgb-plz",
+  "dependencies": {
+    "postcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.14.0",
+    "gulp-mocha": "^2.1.2"
+  },
+  "scripts": {
+    "test": "gulp"
+  }
+}
