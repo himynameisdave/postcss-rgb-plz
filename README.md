@@ -25,3 +25,7 @@ postcss([ require('postcss-rgb-plz') ])
 ```
 
 See [PostCSS] docs for examples for your environment.
+
+### Reasoning
+
+Part of the CSS styleguide at my work is to always use rgb values for color, and sometimes I like to use hexes/my preprocessor will convert to hexes.
