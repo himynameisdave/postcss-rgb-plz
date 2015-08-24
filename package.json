@@ -1,6 +1,6 @@
 {
   "name": "postcss-rgb-plz",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "PostCSS plugin to convert hex colors to rgb",
   "keywords": [
     "postcss",
@@ -8,7 +8,8 @@
     "postcss-plugin",
     "color",
     "rgb",
-    "hex"
+    "hex",
+    "postprocessor"
   ],
   "author": "Dave Lunny",
   "license": "MIT",

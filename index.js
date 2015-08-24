@@ -5,7 +5,7 @@ module.exports = postcss.plugin('postcss-rgb-plz', function (opts) {
 
     return function (css) {
       //  loop through each CSS declaration
-      css.eachDecl(function(decl){
+      css.walkDecls(function(decl){
         // The value of that declaration
         var val = decl.value;
         //  if there even is a value...
