@@ -17,6 +17,12 @@
 }
 ```
 
+## Install
+
+```
+npm i --save-dev postcss-rgb-plz
+```
+
 ## Usage
 
 ```js
