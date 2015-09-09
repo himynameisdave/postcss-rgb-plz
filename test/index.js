@@ -24,9 +24,12 @@ var fs       = require('fs'),
     };
 
     test( "basic", function(t){
-      compareFixtures(t, "rgb-plz-basic", "should transform hexes to rgb");
+      compareFixtures(t, "rgb-plz", "should transform hexes to rgb");
       t.end();
     });
+
+
+    
 
     // test( "no-spaces", function(t){
     //   compareFixtures(t, "no-spaces-plz", "should transform hexes to rgb like normal", { spaces: false });

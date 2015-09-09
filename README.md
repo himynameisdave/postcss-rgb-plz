@@ -31,6 +31,12 @@ postcss([ require('postcss-rgb-plz') ])
 
 See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
 
+## Dependencies
+
+`postcss-rgb-plz` is dependant on PostCSS v5.0.0 or later. Sorry old people.
+
 ### Reasoning
 
 Part of the CSS styleguide at my work is to always use rgb values for color, and sometimes I like to use hexes/my preprocessor will convert to hexes. This solves that issue.
+
+
