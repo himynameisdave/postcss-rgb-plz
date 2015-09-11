@@ -15,28 +15,23 @@ var fs       = require('fs'),
       opts = opts || {}
       var actual = postcss().use(plugin(opts)).process(read(postcssOpts.from), postcssOpts).css
 
-
-
       var expected = read(filename("fixtures/" + name + ".expected"))
       fs.writeFile(filename("fixtures/" + name + ".actual"), actual)
       t.equal(actual, expected, msg)
 
     };
 
-    test( "basic", function(t){
-      compareFixtures(t, "rgb-plz", "should transform hexes to rgb");
+    // test( "basic", function(t){
+    //   compareFixtures(t, "rgb-plz", "should transform hexes to rgb");
+    //   t.end();
+    // });
+
+    // test( "font-face", function(t){
+    //   compareFixtures(t, "font-face", "should not alter the hash value in the url at all")
+    //   t.end();
+    // });
+
+    test( "background", function(t){
+      compareFixtures(t, "background", "should handle multiple backgrounds (urls and hexes) properly");
       t.end();
     });
-
-
-    
-
-    // test( "no-spaces", function(t){
-    //   compareFixtures(t, "no-spaces-plz", "should transform hexes to rgb like normal", { spaces: false });
-    //   t.end();
-    // });
-
-    // test( "yes-spaces", function(t){
-    //   compareFixtures(t, "yes-spaces-plz", "should transform hexes to rgb with spaces between the brakets", { spaces: true });
-    //   t.end();
-    // });
