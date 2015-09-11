@@ -1,0 +1,4 @@
+.background {
+  background-image:  url("/path/to/a/cool.svg#iefix"),
+                     linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
+}
