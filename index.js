@@ -23,7 +23,6 @@ module.exports = postcss.plugin('postcss-rgb-plz', function (opts) {
           var hexes = val.match(/#\w{3,6}/g);
           //  as long as there actually are hexes...
           if( hexes && hexes.length > 0 ){
-            console.log( "There are hexes" );
             //  where we're going to store our new val
             var newVal = val;
             // ...we loop through them and replace them with the rgb string

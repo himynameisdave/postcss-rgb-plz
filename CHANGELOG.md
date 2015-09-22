@@ -1,3 +1,7 @@
+## 2.0.2
+> *2015-09-22*
+Removes an annoying console.log
+
 ## 2.0.1
 > *2015-09-10*
 Fixes an issue where hash symbols (#) in url() values would try to be converted
